@@ -35,7 +35,7 @@ const GptSearchBar = () => {
     console.log(searchText.current.value);
     // make an API call to GPT API and get movie results
     const prompt =
-      "Act as a Movie Recommendation system and suggest some movvies for the query" +
+      "Act as a Movie Recommendation system and suggest some movies for the query" +
       searchText.current.value +
       ". only give me names of 5 movies , commma seperated like the example result given ahead. Example Result:Gadar, Sholay ,Don ,Golmaal ,Koi Mil Gaya";
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
