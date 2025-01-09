@@ -31,7 +31,7 @@ const Error = ({ msg }) => {
                 className="hover:text-gray-400"
                 to="/browse"
               >
-                <span>Get back to Search </span>
+                <span>Get Back to Search </span>
                 <i className="fa-solid fa-arrow-right"></i>
               </Link>
             </div>
