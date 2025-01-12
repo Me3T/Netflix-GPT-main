@@ -12,7 +12,7 @@ const Error = ({ msg }) => {
   console.log(msg);
   const errorLog = {
     "Error: [GoogleGenerativeAI Error]: Text not available. Response was blocked due to SAFETY":
-      "Safety Issues inappropriate Words",
+      "Safety Issues Inappropriate Words",
     "Error: [GoogleGenerativeAI Error]: Candidate was Blocked due to SAFETY":
       "Error Loading Content",
     503: "AI Model Overloaded",
