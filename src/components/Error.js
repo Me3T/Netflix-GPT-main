@@ -16,7 +16,7 @@ const Error = ({ msg }) => {
     "Error: [GoogleGenerativeAI Error]: Candidate was Blocked due to SAFETY":
       "Error Loading Content",
     503: "AI Model Overloaded",
-    "Error: [500 ] An internal Error has occurred.": "Internal Error",
+    "Error: [500 ] An Internal Error has occurred.": "Internal Error",
   };
 
   const message = errorLog[msg];
