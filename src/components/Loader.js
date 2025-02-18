@@ -10,7 +10,7 @@ const Loader = () => {
     <div className="fixed inset-0 flex items-center justify-center">
       <PropagateLoader
         color="red"
-        size={25}
+        size={26}
         aria-label="Loading Spinner"
         data-testid="loader"
       />
