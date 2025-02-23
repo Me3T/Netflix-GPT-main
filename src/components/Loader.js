@@ -1,9 +1,5 @@
 import { PropagateLoader } from "react-spinners";
-// const override: CSSProperties = {
-//   display: "block",
-//   margin: "0 auto",
-//   borderColor: "red",
-// };
+
 
 const Loader = () => {
   return (
