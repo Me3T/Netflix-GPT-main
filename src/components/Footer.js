@@ -47,7 +47,7 @@ const Footer = () => {
           <ul>
             <li className="py-2 hover:underline cursor-pointer">Gift Cards</li>
             <li className="py-2 hover:underline cursor-pointer">
-              Terms <Optg></Optg>f Use
+              Terms Of Use
             </li>
             <li className="py-2 hover:underline cursor-pointer">
               Corporate Information

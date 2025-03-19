@@ -33,12 +33,12 @@ const GptSearchBar = () => {
   const handleGptSearchClick = async () => {
     setLoading(true);
     console.log(searchText.current.value);
-    // make an API call to GPT API and get movie results
+    // make an API call to GEMINI API and get movie results
     const prompt =
       "Act as a Movie Recommendation system and suggest some movies for the query" +
       searchText.current.value +
       ". only give me names of 5 movies , commma seperated like the example result given ahead. Example Result:Gadar, Sholay ,Don ,Golmaal ,Koi Mil Gaya";
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const result = await model.generateContent(prompt);
     const response = result.response;
     const text = response.text();
@@ -48,7 +48,6 @@ const GptSearchBar = () => {
 
     const tmdbResults = await Promise.all(promiseArray);
     if (tmdbResults) setLoading(false);
-    console.log(tmdbResults);
 
     dispatch(
       addGeminiMovieResult({ movieNames: movies, movieResults: tmdbResults })
