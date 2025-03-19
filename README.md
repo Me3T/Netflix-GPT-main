@@ -1,64 +1,91 @@
-# Netflix GPT
--- create react app
--- configured tailwind css
--- Header
--- Routing of APP
--- Login Form
--- Sign up Form
--- Form Validation
--- UseRef Hook
--- Firebase Setup
--- Deploying our app to production
--- Create Signup User Account in Firebase
--- Implement sign in user api
--- created redux store with userSlice
--- Implemented Sign out
--- update profile API Call
--- Bug Fix :Sign up user displayname and profile updated
--- Bug Fix : If the user is not logged in Redirect /browse to login page and vice-versa
--- Unsubscribed to the onAuthStateChanged callback
--- Add hardcoded values to the constants file
--- Register TMDB API and get access token
--- Get Data from TMDB now playing movies list api
--- Custom Hook for Now Playing Movies
--- Create movieSlice
--- Update store with movies data
--- Planning for MainContainer and secondaryContainer
--- Fetch Data for Trailer Video
--- Update Store with Trailer Video Data
--- Embedded the Youtube Video and make it autolay and mute
--- Tailwind classes to make main container look awesome
--- Build Secondary Component
--- Build Movie List
--- Build Movie Card
--- TMDB image CDN URL
--- Made the browse page amazing using Tailwind CSS
--- usePopularMovies Custom hook
--- GPT Search feature
--- (BONUS) Multiple-language Feature in our App
--- Get Gemini API key
--- Gemini API search call
--- Fetch GeminimovieSuggestions from TMBD
--- created Gemini Slice added data
--- Reused Movie List Component to make movie sugggestion container
--- Memoization
--- Added .env file to gitignore
--- Made our Site Responsive
+# 🎮 Movie Recommendation App
 
-# Features
-- Login / Sign up form
-  - Sign in / Sign up form
-- Browse (after authentication)
+A feature-rich movie recommendation app built with **React, Redux, Firebase, Tailwind CSS, and Google Gemini API**. Users can explore trending movies, watch trailers, and receive AI-generated movie suggestions.
 
-- Browse page
+---
 
-  - Header
-  - Main movie
-    - Trailer
-    - Title and Description
-    - Movie Suggestions
-      - MovieLists \* n
+## 🚀 Features
 
-- Netlfix GPT
-  - Search Bar
-  - Movie Suggestions
+### 🏢 **Core Development**
+
+- ✅ **React App Setup** - Created with Create React App
+- ✅ **Tailwind CSS** - Styled using Tailwind for a sleek UI
+- ✅ **Routing** - Implemented seamless navigation
+
+### 🔒 **Authentication**
+
+- ✅ **Login & Signup Forms** - With form validation using `useRef`
+- ✅ **Firebase Setup** - Integrated Firebase authentication
+- ✅ **User Account Management** - Signup, Sign-in, Profile Update, and Sign-out
+- ✅ **Protected Routes** - Redirect users based on authentication status
+
+### 🎥 **Movie Data & API Integration**
+
+- ✅ **TMDB API** - Fetched now-playing and popular movies
+- ✅ **Redux Store** - Centralized state management with `movieSlice`
+- ✅ **Trailer Video Fetching** - Embedded YouTube trailers with autoplay & mute
+
+### 🌮 **Movie Discovery & AI Search**
+
+- ✅ **Custom Hooks** - For fetching Now Playing & Popular Movies
+- ✅ **Google Gemini AI** - Implemented AI-powered movie search
+- ✅ **Movie Suggestions** - AI-generated recommendations displayed beautifully
+
+### 🌍 **Enhancements & Optimizations**
+
+- ✅ **Multi-language Support** - Added multiple languages
+- ✅ **Performance Boost** - Memoized components for efficiency
+- ✅ **Responsive UI** - Fully mobile-friendly with Tailwind
+- ✅ **Environment Variables** - Secured API keys using `.env`
+
+---
+
+## 🔧 Installation & Setup
+
+1. Clone the repository
+
+```sh
+git clone https://github.com/your-repo/movie-recommendation-app.git
+cd movie-recommendation-app
+```
+
+2. Install dependencies
+
+```sh
+npm install
+```
+
+3. Set up Firebase & TMDB API keys in `.env`
+
+```sh
+REACT_APP_FIREBASE_API_KEY=your_firebase_key
+REACT_APP_GEMINI_API_KEY=your_gemini_key
+REACT_APP_TMDB_API_KEY=your_tmdb_key
+```
+
+4. Run the app
+
+```sh
+npm start
+```
+
+---
+
+## 📱 Deployment
+
+The app is deployed to **Firebase Hosting**. To deploy:
+
+```sh
+npm run build
+firebase deploy
+```
+
+---
+
+## 🎯 Upcoming Features
+
+- ✅ Advanced Filtering & Sorting
+- ✅ User Watchlist & Favorites
+- ✅ Dark Mode
+
+Feel free to contribute & enhance the project! 🚀
